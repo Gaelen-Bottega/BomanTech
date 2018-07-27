@@ -7,6 +7,7 @@ Current website is [here](http://www.bomantechnologies.com/)
 ## TO-DO
 
 1. Fix footer position
+1. Refactor nav
 1. Email contact info funtionality
 1. Autoplay homepage header carousel
 1. Get pictures for the company
