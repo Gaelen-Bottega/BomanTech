@@ -1,29 +1,22 @@
+# BowmanTech
+
 #### Devleopment for redesign started March 7th
 
 Current website is [here](http://www.bomantechnologies.com/)
 
-Feel free to contribute requests with your own readme.md file with ideas!
-This file will be updated as progress goes along.
+## TO-DO
 
-Features so far will be
-
-* Comprehensive homepage with
-  
-  * Bigger Logo
-  * Mission Statement/ Overview
-  * Pictures
-  * Links to other pages
-
-* About Us page
-  
-  * Brief synopis of job, person and a link to contact
-  * Pictures/ Accolades
-
-* Contact Us page
+1. Fix footer position
+1. Email contact info funtionality
+1. Autoplay homepage header carousel
+1. Get pictures for the company
+1. Style custom and production pages
+1. Finish styles for navbar
+1. Refactor home and contact pages
+1. Choose fonts
+1. Choose color scheme
 
 * _Possible_ Blog
-
-* Form to fill out to contact them via email
 
 * A place where heat sheets can be kept/ documents 
   
@@ -31,18 +24,14 @@ Features so far will be
   
 ---
 
-**Currently working on** : 
-Custom Services page 
-Production Services page 
-Database feature with Rails
-Steel color navbar
+## DONE
 
-linear-gradient(to top, rgba(246,233,189,0), rgba(255,233,189,1)) !important
+1. Intial template style
+1. Routes
+1. About page
 
 
-More to come! 
-
-Gaelen
 
 
-# BowmanTech
+
+
