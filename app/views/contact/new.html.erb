@@ -1,61 +1,53 @@
-<!-- <div class="container-fluid container-au">
-  <div class="container">
-    <div class="form-center">
-      
-      <div class="card-body card-s contact-card">
-        <form class="form">
-          <div class="form-row">
-            <div class="form-group col-md-12">
-              <label for="inputName4">Name</label>
-              <input type="name" class="form-control" id="inputName4" placeholder="First, Last">
-            </div>
-            <div class="form-group col-md-12">
-              <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-            </div>
-            <div class="form-group col-md-12">
-              <label for="inputTitle4">Job Position</label>
-              <input type="title" class="form-control" id="inputTitle4" placeholder="Title">
-            </div>
-         
-            <div class="form-group col-md-12">
-              <label for="inputCompany4">Company Name</label>
-              <input type="company" class="form-control" id="inputCompany4" placeholder="Company">
-            </div>
-
-            <div class="form-group col-md-12">
-              <label for="inputNumber4">Contact Number</label>
-              <input type="number" class="form-control" id="inputNumber4" placeholder="Number">
-            </div>
-          
-            <div class="input-group col-md-12">
-             <div class="input-group-prepend">
-               <span class="input-group-text input-custom">Give us your challenge</span>
-             </div>
-             <div class="contact-field message-box">
-               <textarea class="form-control message-h" aria-label="With textarea"></textarea>
-             </div>
-            </div>
-            <button type="submit" class="btn btn-primary button">Submit</button>
-          </div>
-        </form>
-      </div>
-      
-    </div>
-  </div>
-</div> -->
-
 <%= form_for @contact, url: create_contact_url do |f| %>
   <%= notice %>
   <%= @contact.errors.full_messages.join(', ') %>
+  <div class="container-fluid container-au">
+    <div class="container">
+      <div class="form-center">
+        
+        <div class="card-body card-s contact-card">
+          <form class="form">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label>Name</label>
+                <%= f.text_field :name, class: 'form-control' %>
+              </div>
+              <div class="form-group col-md-12">
+                <label>Email</label>
+                <%= f.email_field :email, class: 'form-control' %>
+              </div>
+              <div class="form-group col-md-12">
+                <label>Job Position</label>
+                <%= f.text_field :job_position, class: 'form-control' %>
+              </div>
+           
+              <div class="form-group col-md-12">
+                <label>Company Name</label>
+                <%= f.text_field :company_name, class: 'form-control' %>
+              </div>
 
-  <%= f.text_field :name, placeholder: 'name' %>
-  <%= f.email_field :email, placeholder: 'email' %>
-  <%= f.text_field :job_position %>
-  <%= f.text_field :company_name %>
-  <%= f.text_field :phone %>
-  <%= f.text_area :body, placeholder: 'body' %>
-  <%= f.submit 'Send' %>
+              <div class="form-group col-md-12">
+                <label>Contact Number</label>
+                <%= f.text_field :phone, class: 'form-control' %>
+              </div>
+            
+              <div class="input-group col-md-12">
+               <div class="input-group-prepend">
+                 <span class="input-group-text input-custom">Give us your challenge</span>
+               </div>
+               <div class="contact-field message-box">
+                 <%= f.text_area :body, class: 'form-control message-h' %>
+               </div>
+              </div>
+              <%= f.submit 'Send', class: 'btn btn-primary button' %>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
 <% end %>
 
 
