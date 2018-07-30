@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   get 'about_us', to: 'pages#AboutUs'
 
-  get 'contact', to: 'pages#Contact'
+  get 'contact', to: 'contact#new', as: 'new_contact'
+  post 'create_contact', to: 'contact#create', as: 'create_contact'
 
   get 'custom_services', to: 'pages#CustomServices'
 
