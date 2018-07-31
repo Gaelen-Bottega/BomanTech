@@ -1,13 +1,14 @@
 @import "bootstrap";
 
-html,
-body {
-  height: 100%;
+*,
+*:before,
+*:after {
   margin: 0;
 }
 
+html,
 body {
-  background-color: white !important;
+  height: 100%;
 }
 
 /* Navbar */
@@ -127,96 +128,7 @@ body {
  
 }
 
-/* Form */
-
-.container-au {
-  width: 100%;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-image: url(/assets/parts.jpg) !important;
-  background-size: cover;
-}
-
-
-.form {
- margin: auto;
-}
-
-.form-center {
-  width: 50%;
-  margin: auto;
-}
-
-/*.contact-card {
-  padding-top: 50px;
-  margin-bottom: 50px;
-}*/
-
-.input-size {
-  width: 600px;
-  height: 150px;
-}
-
-.card-s {
-  height: 700px;
-  background-color: white;
-  border: #445c97 solid 2px;
-}
-
-.message-box {
-  width: 100%;
-}
-
-.message-h {
-  height: 135px;
-}
-
-.button {
-  width: 54%;
-  margin: auto;
-  margin-top: 20px;
-}
-
-.input-custom {
-  padding: 0.375rem 10.49rem !important;
-  padding-top: 0.375rem;
-  padding-right: 10.49rem;
-  padding-bottom: 0.375rem;
-  padding-left: 10.49rem;
-  margin-bottom: -1px !important;
-  border-radius: 0.25rem !important;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
-
-@media (max-width: 1199px) {
-  .input-custom {
-    padding: 0.375rem 7.66rem !important;
-    padding-top: 0.375rem;
-    padding-right: 7.66rem;
-    padding-bottom: 0.375rem;
-    padding-left: 7.66rem;
-
-  }
-  .text-c {
-    margin-right: 28rem;
-  }
-}
-
-@media (max-width: 991px) {
-  .input-custom {
-    padding: 0.375rem 3.92rem !important;
-    padding-top: 0.375rem;
-    padding-right: 3.92rem;
-    padding-bottom: 0.375rem;
-    padding-left: 3.92rem;
-  }
-  .text-c {
-    margin-right: 1rem;
-  }
-}
+@import "contactPage";
 
 /* @media's */
 
@@ -228,17 +140,7 @@ body {
 
 /* footer */
 
-.page-footer {
-  position: absolute;
-  bottom: 0;
-}
-
-#footer {
-  width: 100%;
-  padding: 8px 0px;
-  background-color: pink;
-  text-align: center;
-}
+@import "footer";
 
 
 
