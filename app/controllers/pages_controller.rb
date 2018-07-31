@@ -5,9 +5,6 @@ class PagesController < ApplicationController
   def AboutUs
   end
 
-  def Contact
-  end
-
   def CustomServices
   end
 
