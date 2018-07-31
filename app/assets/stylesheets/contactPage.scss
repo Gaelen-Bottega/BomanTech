@@ -1,4 +1,4 @@
-.card-body {
+.contact-cards {
 	padding: 15px 15px;
 	margin: 10% 3%;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -13,4 +13,12 @@
 		outline: none !important;
 		border: 2px solid #435c97;
 	}
+}
+
+.contact-textarea {
+	margin-top: 3%;
+}
+
+textarea {
+	display: block;
 }

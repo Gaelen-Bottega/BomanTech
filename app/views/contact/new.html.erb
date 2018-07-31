@@ -2,11 +2,9 @@
   <div class="form-row">
 
     <div class="col-md-6">
-      <div class="card-body">
+      <div class="contact-cards">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24002.35880817313!2d-73.08591199841447!3d41.23713484577605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e874e57cca326f%3A0x9f621430cb9165a6!2sMilford%2C+CT+06461!5e0!3m2!1sen!2sus!4v1533063732848" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
         <hr>
-
         <div class="contact-info">
           <div class="row">
             <div class="col-md-6">
@@ -25,7 +23,7 @@
     </div>
 
     <div class="col-md-6">
-      <div id="contact-card" class="card-body">
+      <div class="contact-cards">
         <h3>Give us a project!</h3>
         <hr>
         <%= form_for @contact, url: create_contact_url do |f| %>
@@ -58,12 +56,12 @@
         </div>
       
         <div class="form-group">
-           <%= f.text_area :body, placeholder: 'Give us your challenge!', class: 'control', rows: '10', maxlength: 450 %>
+           <%= f.text_area :body, placeholder: 'Give us your challenge!', class: 'control contact-textarea', rows: '10', maxlength: 450 %>
         </div>
 
         <div class="submit-btn display-inline-block">
           <span><%= f.submit 'Send', class: 'btn btn-primary' %></span>
-          <span class="text-muted">450 Character Limit</span>
+          <span id="chars" class="text-muted">450</span>
         </div>
       </div>
     </div>
