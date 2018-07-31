@@ -1,52 +1,44 @@
 <%= form_for @contact, url: create_contact_url do |f| %>
   <%= notice %>
   <%= @contact.errors.full_messages.join(', ') %>
-  <div class="container-fluid container-au">
     <div class="container">
-      <div class="form-center">
-        
-        <div class="card-body card-s contact-card">
-          <form class="form">
-            <div class="form-row">
-              <div class="form-group col-md-12">
-                <label>Name</label>
-                <%= f.text_field :name, class: 'form-control' %>
-              </div>
-              <div class="form-group col-md-12">
-                <label>Email</label>
-                <%= f.email_field :email, class: 'form-control' %>
-              </div>
-              <div class="form-group col-md-12">
-                <label>Job Position</label>
-                <%= f.text_field :job_position, class: 'form-control' %>
-              </div>
-           
-              <div class="form-group col-md-12">
-                <label>Company Name</label>
-                <%= f.text_field :company_name, class: 'form-control' %>
-              </div>
-
-              <div class="form-group col-md-12">
-                <label>Contact Number</label>
-                <%= f.text_field :phone, class: 'form-control' %>
-              </div>
-            
-              <div class="input-group col-md-12">
-               <div class="input-group-prepend">
-                 <span class="input-group-text input-custom">Give us your challenge</span>
-               </div>
-               <div class="contact-field message-box">
-                 <%= f.text_area :body, class: 'form-control message-h' %>
-               </div>
-              </div>
-              <%= f.submit 'Send', class: 'btn btn-primary button' %>
-            </div>
-          </form>
+      <div class="card-body">
+        <div class="form-group">
+          <label>Name</label>
+          <%= f.text_field :name, class: 'form-control' %>
         </div>
-        
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label>Email</label>
+            <%= f.email_field :email, class: 'form-control' %>
+          </div>
+          <div class="form-group col-md-6">
+            <label>Phone</label>
+            <%= f.text_field :phone, class: 'form-control' %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Job Position</label>
+          <%= f.text_field :job_position, class: 'form-control' %>
+        </div>
+     
+        <div class="form-group">
+          <label>Company Name</label>
+          <%= f.text_field :company_name, class: 'form-control' %>
+        </div>
+      
+        <div class="form-group">
+           <%= f.text_area :body, placeholder: 'Give us your challenge!', class: 'form-control', rows: '10', maxlength: 450 %>
+        </div>
+
+        <div class="submit-btn display-inline-block">
+          <span><%= f.submit 'Send', class: 'btn btn-primary' %></span>
+          <span class="text-muted">450 Character limit</span>
+        </div>
       </div>
     </div>
-  </div>
 
 <% end %>
 
