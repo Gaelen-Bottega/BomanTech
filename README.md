@@ -31,6 +31,12 @@ Current website is [here](http://www.bomantechnologies.com/)
 1. Routes
 1. About page
 
+---
+
+_Notes_: 
+
+Colour scheme: #435c97 (blue)
+
 
 
 
