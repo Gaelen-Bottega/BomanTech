@@ -1,20 +1,37 @@
+.contact-header {
+	width: 100%;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.contact-header {
+	h1 { color: $boman-blue; }
+	p { width: 80%;
+		padding-bottom: 25px;
+		border-bottom: 4px solid $boman-blue;
+	}
+}
+
 .contact-cards {
 	padding: 15px 15px;
 	margin: 10% 3%;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	color: $boman-blue;
 }
 
 .control {
-	width: 100%;
-	padding: 6px 15px;
-	border: 1px solid #999999;
-	box-sizing: border-box;
-	&:focus {
-		outline: none !important;
-		border: 2px solid #435c97;
-	}
+	@include input-fields;
 }
 
 .contact-textarea {
 	margin-top: 3%;
+}
+
+.submit-btn {
+	position: relative;
+}
+
+#characterCounter {
+	position: absolute;
+	right: 0;
 }
