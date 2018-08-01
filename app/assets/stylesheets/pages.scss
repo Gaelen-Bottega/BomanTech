@@ -1,5 +1,20 @@
 @import "bootstrap";
 
+@mixin input-fields {
+  width: 100%;
+  padding: 4px 10px;
+  border: 0;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  &:focus {
+    outline: none !important;
+    border: 2px solid $boman-blue;
+  }
+  @content;
+}
+
+$boman-blue: #435c97;
+
 *,
 *:before,
 *:after {
@@ -9,6 +24,10 @@
 html,
 body {
   height: 100%;
+}
+
+.btn:focus{
+  outline: none;
 }
 
 /* Navbar */
