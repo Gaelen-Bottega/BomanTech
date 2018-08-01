@@ -24,7 +24,7 @@
 
     <div class="col-md-6">
       <div class="contact-cards">
-        <h3>Give us a project!</h3>
+        <h3>Give us a challenge!</h3>
         <hr>
         <%= form_for @contact, url: create_contact_url do |f| %>
         <%= notice %>
@@ -56,12 +56,12 @@
         </div>
       
         <div class="form-group">
-           <%= f.text_area :body, placeholder: 'Give us your challenge!', class: 'control contact-textarea', rows: '10', maxlength: 450 %>
+           <%= f.text_area :body, placeholder: 'Describe your challenge!', rows: '10', maxlength: 450, class: 'control contact-textarea', id: 'contactBodyId' %>
         </div>
 
         <div class="submit-btn display-inline-block">
           <span><%= f.submit 'Send', class: 'btn btn-primary' %></span>
-          <span id="chars" class="text-muted">450</span>
+          <span id="charsRemaining" class="text-muted">450</span>
         </div>
       </div>
     </div>
@@ -70,6 +70,23 @@
 </div>
 
 <% end %>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var count;
+
+    function countCharacters(e) {
+      var textEntered, countRemaining, counter;
+      textEntered = document.getElementById('contactBodyId').value;
+      counter = (450 - (textEntered.length));
+      countRemaining = document.getElementById('charsRemaining');
+      countRemaining.textContent = counter;
+    }
+
+    count = document.getElementById('contactBodyId');
+    count.addEventListener('keyup', countCharacters, false);
+  })
+</script>
 
 
 
