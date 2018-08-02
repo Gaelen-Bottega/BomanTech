@@ -1,0 +1,102 @@
+<div class="container">
+
+  <div class="contact-header">
+    <h1>Contact Us</h1>
+    <p class="text-muted">We're happy to answer any of your questions and provide an estimate. Or send us a challenge specifying the part details and any questions you might have.</p>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-6">
+      <div class="contact-cards">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24002.35880817313!2d-73.08591199841447!3d41.23713484577605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e874e57cca326f%3A0x9f621430cb9165a6!2sMilford%2C+CT+06461!5e0!3m2!1sen!2sus!4v1533063732848" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="contact-info">
+          <h6>Phone:</h6>
+          <%= number_to_phone "5555555555" %>
+          <hr>
+          <h6>Social:</h6>
+          <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="contact-cards">
+        <h3>Give us a challenge!</h3>
+        <hr>
+        <%= form_for @contact, url: create_contact_url do |f| %>
+        <%= notice %>
+        <%= @contact.errors.full_messages.join(', ') %>
+        <div class="form-group">
+          <label>Name</label>
+          <%= f.text_field :name, class: 'control' %>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label>Email</label>
+            <%= f.text_field :email, class: 'control' %>
+          </div>
+          <div class="form-group col-md-6">
+            <label>Phone</label>
+            <%= f.text_field :phone, class: 'control' %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Job Position</label>
+          <%= f.text_field :job_position, class: 'control' %>
+        </div>
+     
+        <div class="form-group">
+          <label>Company Name</label>
+          <%= f.text_field :company_name, class: 'control' %>
+        </div>
+      
+        <div class="form-group">
+           <%= f.text_area :body, placeholder: 'Describe your challenge!', rows: '10', maxlength: 450, class: 'control contact-textarea', id: 'contactBodyId' %>
+        </div>
+
+        <div class="submit-btn display-inline-block">
+          <span><%= f.submit 'Send', class: 'btn btn-primary' %></span>
+          <span id="characterCounter" class="text-muted"><span id="charsRemaining">450</span> Characters remaining</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<% end %>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var count;
+
+    function countCharacters(e) {
+      var textEntered, countRemaining, counter;
+      textEntered = document.getElementById('contactBodyId').value;
+      counter = (450 - (textEntered.length));
+      countRemaining = document.getElementById('charsRemaining');
+      countRemaining.textContent = counter;
+    }
+
+    count = document.getElementById('contactBodyId');
+    count.addEventListener('keyup', countCharacters, false);
+  })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
