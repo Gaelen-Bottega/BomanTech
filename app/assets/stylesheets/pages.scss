@@ -1,5 +1,7 @@
 @import "bootstrap";
 
+$boman-blue: #435c97;
+
 @mixin input-fields {
   width: 100%;
   padding: 4px 10px;
@@ -12,8 +14,6 @@
   }
   @content;
 }
-
-$boman-blue: #435c97;
 
 *,
 *:before,
