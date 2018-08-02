@@ -1,3 +1,7 @@
+.contact-info {
+	margin-top: 20px;
+}
+
 .contact-header {
 	width: 100%;
 	margin-top: 5%;
@@ -5,10 +9,12 @@
 }
 
 .contact-header {
-	h1 { color: $boman-blue; }
-	p { width: 80%;
+	h1 { color: #435c97; }
+	
+	p { 
+		width: 80%;
 		padding-bottom: 25px;
-		border-bottom: 4px solid $boman-blue;
+		border-bottom: 4px solid #435c97;
 	}
 }
 
@@ -16,11 +22,19 @@
 	padding: 15px 15px;
 	margin: 10% 3%;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-	color: $boman-blue;
+	color: #435c97;
 }
 
 .control {
-	@include input-fields;
+	width: 100%;
+  padding: 4px 10px;
+  border: 0;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  &:focus {
+    outline: none !important;
+    border: 2px solid #435c97;
+  }
 }
 
 .contact-textarea {
