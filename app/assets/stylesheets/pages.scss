@@ -81,20 +81,12 @@ body {
   font-family: sans-serif;
 }
 
-/*.lines {
-  border-left: 5px solid #435c97
-  height 200px;
-  margin-left: 20%;
-}*/
-/*block-2*/
-
 #B2 {
   height: 200px;
   width: 100%;
   background-color: pink;
   margin-top: 200px;
 }
-
 
 /* Cards/ about us */
 
@@ -115,21 +107,21 @@ body {
   color: black;
 }
 
-.drill-pic {
-  z-index: -100;
-  width: 50%;
-}
-
 .jumbotron-au {
   background-image: url(/assets/drill.jpg) !important;
   background-size: cover;
+  color: white;
 }
 
-.text-c {
-  color: white;
-  line-height: 40px;
-  margin-right: 37rem;
- 
+.aboutUs-text {
+  width: 40%;
+  margin-left: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutUs-text {
+    width: 80%;
+  }
 }
 
 @import "contactPage";
