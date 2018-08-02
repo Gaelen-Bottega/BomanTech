@@ -1,6 +1,11 @@
 <div class="container">
-  <div class="form-row">
 
+  <div class="contact-header">
+    <h1>Contact Us</h1>
+    <p class="text-muted">We're happy to answer any of your questions and provide an estimate. Or send us a challenge specifying the part details and any questions you might have.</p>
+  </div>
+
+  <div class="form-row">
     <div class="col-md-6">
       <div class="contact-cards">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24002.35880817313!2d-73.08591199841447!3d41.23713484577605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e874e57cca326f%3A0x9f621430cb9165a6!2sMilford%2C+CT+06461!5e0!3m2!1sen!2sus!4v1533063732848" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -24,7 +29,7 @@
 
     <div class="col-md-6">
       <div class="contact-cards">
-        <h3>Give us a project!</h3>
+        <h3>Give us a challenge!</h3>
         <hr>
         <%= form_for @contact, url: create_contact_url do |f| %>
         <%= notice %>
@@ -56,12 +61,12 @@
         </div>
       
         <div class="form-group">
-           <%= f.text_area :body, placeholder: 'Give us your challenge!', class: 'control contact-textarea', rows: '10', maxlength: 450 %>
+           <%= f.text_area :body, placeholder: 'Describe your challenge!', rows: '10', maxlength: 450, class: 'control contact-textarea', id: 'contactBodyId' %>
         </div>
 
         <div class="submit-btn display-inline-block">
           <span><%= f.submit 'Send', class: 'btn btn-primary' %></span>
-          <span id="chars" class="text-muted">450</span>
+          <span id="characterCounter" class="text-muted"><span id="charsRemaining">450</span> Characters remaining</span>
         </div>
       </div>
     </div>
@@ -70,6 +75,23 @@
 </div>
 
 <% end %>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var count;
+
+    function countCharacters(e) {
+      var textEntered, countRemaining, counter;
+      textEntered = document.getElementById('contactBodyId').value;
+      counter = (450 - (textEntered.length));
+      countRemaining = document.getElementById('charsRemaining');
+      countRemaining.textContent = counter;
+    }
+
+    count = document.getElementById('contactBodyId');
+    count.addEventListener('keyup', countCharacters, false);
+  })
+</script>
 
 
 
