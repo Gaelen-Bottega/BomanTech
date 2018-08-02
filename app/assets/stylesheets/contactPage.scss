@@ -17,14 +17,26 @@
 .contact-cards {
 	padding: 15px 15px;
 	margin: 10% 3%;
-	
-	label { color: #435c97; }
 
+	h3,
+	label,
 	h6 { color: #435c97; }
+}
+
+iframe {
+	margin-top: 15px;
 }
 
 .contact-info {
 	margin-top: 20px;
+}
+
+.social-icons {
+	font-size: 40px;
+
+	a { margin-right: 10px; }
+
+	.fa-instagram { color: #AE377B; }
 }
 
 .control {
