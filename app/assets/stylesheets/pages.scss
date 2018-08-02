@@ -90,23 +90,6 @@ body {
 
 /* Cards/ about us */
 
-.card-size {
-  margin: auto !important;
-}
-
-.card-space {
-  margin-top: 50px;
-}
-
-.size {
-  margin: auto !important;
-  width: 75%;
-}
-
-.black {
-  color: black;
-}
-
 .jumbotron-au {
   background-image: url(/assets/drill.jpg) !important;
   background-size: cover;
@@ -115,6 +98,11 @@ body {
 
 .aboutUs-text {
   width: 40%;
+  margin-left: 10%;
+}
+
+.aboutUs-container {
+  margin-right: 10%;
   margin-left: 10%;
 }
 
