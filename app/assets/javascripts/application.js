@@ -22,11 +22,4 @@ $(document).ready(function(){
   $('.carousel').carousel({
       pause: false
   });
-	
-	var maxLength = 450;
-	$('.contact-textarea').keyup(function() {
-		var length = $(this).val().length;
-		var length = maxLength-length;
-		$('#chars').text(length);
-	});
-})
+});
