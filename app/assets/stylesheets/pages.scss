@@ -1,20 +1,5 @@
 @import "bootstrap";
 
-$boman-blue: #435c97;
-
-@mixin input-fields {
-  width: 100%;
-  padding: 4px 10px;
-  border: 0;
-  border: 1px solid #999999;
-  box-sizing: border-box;
-  &:focus {
-    outline: none !important;
-    border: 2px solid $boman-blue;
-  }
-  @content;
-}
-
 *,
 *:before,
 *:after {
