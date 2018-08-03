@@ -102,11 +102,10 @@ body {
 }
 
 .aboutUs-container {
-  margin-right: 8%;
-  margin-left: 8%;
+  margin: 8% 13%;
 }
 
-.our-team-header {
+.team-header {
   h1 { color: #435c97; }
   
   p { 
@@ -124,7 +123,24 @@ body {
   }
 }
 
+.card {
+  border: 0;
+  border-radius: 0;
+
+  .card-img-top {
+    border-radius: 0;
+  }
+
+  .card-body {
+    margin-left: -20px !important;
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .aboutUs-container {
+    margin: 0% 8%;
+  }
+
   .aboutUs-text {
     width: 80%;
   }
