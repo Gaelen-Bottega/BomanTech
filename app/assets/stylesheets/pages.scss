@@ -88,63 +88,7 @@ body {
   margin-top: 200px;
 }
 
-/* Cards/ about us */
-
-.jumbotron-au {
-  background-image: url(/assets/drill.jpg) !important;
-  background-size: cover;
-  color: white;
-}
-
-.aboutUs-text {
-  width: 40%;
-  margin-left: 10%;
-}
-
-.aboutUs-container {
-  margin: 8% 13%;
-}
-
-.team-header {
-  h1 { color: #435c97; }
-  
-  p { 
-    width: 80%;
-    padding-bottom: 25px;
-    border-bottom: 4px solid #435c97;
-  }
-}
-
-.aboutMe-card {
-  margin: 25px 0px;
-
-  h5 {
-    margin-bottom: 0;
-  }
-}
-
-.card {
-  border: 0;
-  border-radius: 0;
-
-  .card-img-top {
-    border-radius: 0;
-  }
-
-  .card-body {
-    margin-left: -20px !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .aboutUs-container {
-    margin: 0% 8%;
-  }
-
-  .aboutUs-text {
-    width: 80%;
-  }
-}
+@import "aboutUsPage";
 
 @import "contactPage";
 
