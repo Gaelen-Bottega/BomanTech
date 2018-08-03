@@ -51,6 +51,12 @@ body {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .home-carousel {
+    height: 250px;
+  }
+}
+
 /*block-1*/
 
 #B1 {
@@ -81,13 +87,6 @@ body {
   font-family: sans-serif;
 }
 
-/*.lines {
-  border-left: 5px solid #435c97
-  height 200px;
-  margin-left: 20%;
-}*/
-/*block-2*/
-
 #B2 {
   height: 200px;
   width: 100%;
@@ -95,54 +94,9 @@ body {
   margin-top: 200px;
 }
 
-
-/* Cards/ about us */
-
-.card-size {
-  margin: auto !important;
-}
-
-.card-space {
-  margin-top: 50px;
-}
-
-.size {
-  margin: auto !important;
-  width: 75%;
-}
-
-.black {
-  color: black;
-}
-
-.drill-pic {
-  z-index: -100;
-  width: 50%;
-}
-
-.jumbotron-au {
-  background-image: url(/assets/drill.jpg) !important;
-  background-size: cover;
-}
-
-.text-c {
-  color: white;
-  line-height: 40px;
-  margin-right: 37rem;
- 
-}
+@import "aboutUsPage";
 
 @import "contactPage";
-
-/* @media's */
-
-@media (max-width: 768px) {
-  .home-carousel {
-    height: 250px;
-  }
-}
-
-/* footer */
 
 @import "footer";
 
