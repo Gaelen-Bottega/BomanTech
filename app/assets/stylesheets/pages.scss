@@ -17,6 +17,10 @@ body {
 
 /* Navbar */
 
+nav {
+  position: relative;
+}
+
 #bowman_logo img {
   max-height: 140px;
   max-width: 175px;
@@ -24,8 +28,13 @@ body {
   height: auto;
 }
 
-.text-size {
-  font-size: 16px;
+// .margin-b {
+//   margin-left: 76%;
+// }
+
+.navbar-toggler {
+  position: absolute;
+  right: 20px;
 }
 
 /* Carousel & homepage */ 
@@ -41,10 +50,6 @@ body {
 .carousel-img {
   width: 100%;
   height: auto;
-}
-
-.margin-b {
-  margin-left: 76%;
 }
 
 .white {
