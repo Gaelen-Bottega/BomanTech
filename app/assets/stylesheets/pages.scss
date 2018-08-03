@@ -51,6 +51,12 @@ body {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .home-carousel {
+    height: 250px;
+  }
+}
+
 /*block-1*/
 
 #B1 {
@@ -91,16 +97,6 @@ body {
 @import "aboutUsPage";
 
 @import "contactPage";
-
-/* @media's */
-
-@media (max-width: 768px) {
-  .home-carousel {
-    height: 250px;
-  }
-}
-
-/* footer */
 
 @import "footer";
 
