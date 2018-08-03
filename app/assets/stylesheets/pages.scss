@@ -11,31 +11,12 @@ body {
   height: 100%;
 }
 
-.btn:focus{
+button,
+.btn:focus {
   outline: none;
 }
 
-/* Navbar */
-
-nav {
-  position: relative;
-}
-
-#bowman_logo img {
-  max-height: 140px;
-  max-width: 175px;
-  width: 100%;
-  height: auto;
-}
-
-// .margin-b {
-//   margin-left: 76%;
-// }
-
-.navbar-toggler {
-  position: absolute;
-  right: 20px;
-}
+@import "navbar";
 
 /* Carousel & homepage */ 
 .carousel-inner {
