@@ -4,21 +4,20 @@
   width: 100%;
   padding: 80px 0px;
   background-color: rgba(67, 93, 152, 1);
-  text-align: center;
+  text-align: left;
   color: white;
+  font-weight: bold;
+  font-size: 15px;
+  // box-shadow: 0 0 20px rgba(0, 0, 0, .4);
 }
 
 #footer .footer-containers {
-  // display: inline-block;
+  display: inline-block;
   margin-bottom: 15px;
   width: 20%;
   min-width: 150px;
   vertical-align: top;
-  line-height: 25px;
-}
-
-.explore {
-
+  line-height: 35px;
 }
 
 #footer .footer-containers .nav {
@@ -28,4 +27,17 @@
 
 #footer li {
   list-style: none;
+  font-weight: normal !important;
+  color: #999999 !important;
+}
+
+#footer li a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.legal {
+  color: #999999 !important;
+  margin-left: 10px;
+
 }
