@@ -8,25 +8,24 @@
 
 html,
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  font-family: 'Work Sans', sans-serif;
 }
 
-.btn:focus{
+h1, h2,
+h3, h4,
+h5, h6 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+button,
+.btn:focus {
   outline: none;
 }
 
-/* Navbar */
-
-#bowman_logo img {
-  max-height: 140px;
-  max-width: 175px;
-  width: 100%;
-  height: auto;
-}
-
-.text-size {
-  font-size: 16px;
-}
+@import "navbar";
 
 /* Carousel & homepage */ 
 .carousel-inner {
@@ -41,10 +40,6 @@ body {
 .carousel-img {
   width: 100%;
   height: auto;
-}
-
-.margin-b {
-  margin-left: 76%;
 }
 
 .white {
