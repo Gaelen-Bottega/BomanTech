@@ -8,7 +8,16 @@
 
 html,
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 button,
