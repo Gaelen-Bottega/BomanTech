@@ -51,10 +51,16 @@ body {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .home-carousel {
+    height: 250px;
+  }
+}
+
 /*block-1*/
 
 #B1 {
-  padding-top: 30px;
+  // padding-top: 30px;
   padding-bottom: 0px;
   width: 100%;
   display: flex;
@@ -67,82 +73,48 @@ body {
   float: left;
   height: 52px;
   width: 380px;
-  margin: 50px 20px 50px 20px;
+  margin: 75px 20px 170px 20px;
 }
 
 .B1-titles {
   font-size: 2rem;
-  font-family: Arial;
+  font-family: courier;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .B1-snippets {
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: monospace;
 }
-
-/*.lines {
-  border-left: 5px solid #435c97
-  height 200px;
-  margin-left: 20%;
-}*/
-/*block-2*/
 
 #B2 {
-  height: 200px;
+  padding: 80px 100px 80px 100px;
+  background-color: #435c97; 
   width: 100%;
-  background-color: pink;
-  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 80px;
 }
 
-
-/* Cards/ about us */
-
-.card-size {
-  margin: auto !important;
-}
-
-.card-space {
-  margin-top: 50px;
-}
-
-.size {
-  margin: auto !important;
-  width: 75%;
-}
-
-.black {
-  color: black;
-}
-
-.drill-pic {
-  z-index: -100;
-  width: 50%;
-}
-
-.jumbotron-au {
-  background-image: url(/assets/drill.jpg) !important;
-  background-size: cover;
-}
-
-.text-c {
+.B2-titles {
+  font-size: 2rem;
   color: white;
-  line-height: 40px;
-  margin-right: 37rem;
- 
+  font-family: monospace;
+  text-align: center;
+  margin-bottom: 25px;
 }
+
+.B2-snippets {
+  color: white;
+  font-family: courier;
+}
+
+@import "aboutUsPage";
 
 @import "contactPage";
-
-/* @media's */
-
-@media (max-width: 768px) {
-  .home-carousel {
-    height: 250px;
-  }
-}
-
-/* footer */
 
 @import "footer";
 
