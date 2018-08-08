@@ -1,11 +1,26 @@
 /* Carousel & homepage */ 
 .carousel-inner {
-  max-height: 500px !important;
+  position: relative;
+  max-height: 600px;
   margin-bottom: 30px;
+
+  #carousel-text {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 35%;
+    padding: 20px 20px;
+    background-color: rgba(153, 153, 153, 0.6);
+    color: white;
+
+    h2 {
+      border-bottom: 4px solid #435c97;
+    }
+  }
 }
 
 .speed-home {
-  transition: transform .5s ease-in-out left !important;
+  transition: transform .6s ease-in-out left !important;
 }
 
 .carousel-img {
@@ -17,9 +32,25 @@
   color: white;
 }
 
-@media (max-width: 768px) {
-  .home-carousel {
+@media only screen and (max-width: 700px) {
+
+  .carousel-img {
     height: 250px;
+  }
+
+  #carousel-text {
+    position: absolute;
+    top: 3% !important;
+    width: 70% !important;
+
+    h2 {
+      font-size: 17px;
+    }
+
+    span {
+      font-size: 12px;
+      line-height: none;
+    }
   }
 }
 
@@ -45,11 +76,6 @@
   margin-bottom: 25px;
 }
 
-.B1-snippets {
-  font-size: 20px;
-  font-family: monospace;
-}
-
 #B2 {
   padding: 80px 100px 80px 100px;
   background-color: #435c97; 
@@ -64,12 +90,32 @@
 .B2-titles {
   font-size: 2rem;
   color: white;
-  font-family: monospace;
   text-align: center;
   margin-bottom: 25px;
 }
 
 .B2-snippets {
   color: white;
-  font-family: courier;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
