@@ -1,22 +1,6 @@
-/* Carousel & homepage */ 
 .carousel-inner {
-  position: relative;
   max-height: 600px;
   margin-bottom: 30px;
-
-  #carousel-text {
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    width: 35%;
-    padding: 20px 20px;
-    background-color: rgba(153, 153, 153, 0.6);
-    color: white;
-
-    h2 {
-      border-bottom: 4px solid #435c97;
-    }
-  }
 }
 
 .speed-home {
@@ -28,74 +12,71 @@
   height: auto;
 }
 
-.white {
-  color: white;
+#carousel-text {
+  position: relative;
+  width: 80%;
+  padding: 20px 10%;
+  margin-top: -9%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  h1 {
+    padding-bottom: 20px;
+    border-bottom: 4px solid #435c97;
+  }
+
+  p {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-
-  .carousel-img {
-    height: 250px;
-  }
-
   #carousel-text {
-    position: absolute;
-    top: 3% !important;
-    width: 70% !important;
-
-    h2 {
-      font-size: 17px;
-    }
-
-    span {
-      font-size: 12px;
-      line-height: none;
-    }
+    margin-top: -15%;
   }
 }
 
-#B1 {
-  padding-bottom: 0px;
-  width: 100%;
+#values {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-
-.B1-cards {
-  float: left;
-  height: 52px;
-  width: 380px;
-  margin: 75px 20px 170px 20px;
-}
-
-.B1-titles {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-#B2 {
-  padding: 80px 100px 80px 100px;
-  background-color: #435c97; 
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; 
-  margin-top: 80px;
 }
 
-.B2-titles {
-  font-size: 2rem;
-  color: white;
-  text-align: center;
+.value-cards {
+  height: 250px;
+  width: 380px;
+  margin-top: 8%;
+  margin-left: 30px;
+  margin-right: 30px;
+  
+  .value-titles {
+    border-bottom: 4px solid #435c97;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+}
+
+
+#mission-statement {
+  margin-top: 8%;
+  margin-left: 7%;
+  width: 65%;
+}
+
+.ms-title {
+  width: 200px;
   margin-bottom: 25px;
+  color: white;
+  background-color: #435c97;
 }
 
 .B2-snippets {
-  color: white;
+  
 }
 
 
