@@ -21,7 +21,8 @@
   margin-right: auto;
   text-align: center;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
 
   h1 {
     padding-bottom: 20px;
@@ -30,12 +31,6 @@
 
   p {
     margin-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  #carousel-text {
-    margin-top: -15%;
   }
 }
 
@@ -61,16 +56,17 @@
   }
 }
 
-
 #mission-statement {
   margin-top: 8%;
   margin-left: 7%;
+  margin-bottom: 8%;
   width: 65%;
 }
 
 .ms-title {
   width: 200px;
   margin-bottom: 25px;
+  text-align: center;
   color: white;
   background-color: #435c97;
 }
@@ -79,6 +75,11 @@
   
 }
 
+@media only screen and (max-width: 700px) {
+  #carousel-text {
+    margin-top: -15%;
+  }
+}
 
 
 
