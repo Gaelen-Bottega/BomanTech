@@ -1,10 +1,10 @@
-# BowmanTech
+# BomanTech
 
 #### Redesign Released: _TBA_
 
 Current website is [here](http://www.bomantechnologies.com/)
 
-## TO-DO
+### TO-DO
 
 1. Get pictures
 1. Finish styles for navbar(logo too big on mobile?)
@@ -14,7 +14,7 @@ Current website is [here](http://www.bomantechnologies.com/)
   
 ---
 
-## DONE
+### DONE
 
 1. Intial template style
 1. Routes
@@ -28,7 +28,7 @@ Current website is [here](http://www.bomantechnologies.com/)
 
 ---
 
-## Future Plans
+### Future Plans
 
 * Blog
 * Place where heat sheets can be kept/ documents 
