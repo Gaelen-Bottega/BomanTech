@@ -1,24 +1,16 @@
 # BowmanTech
 
-#### Devleopment for redesign started March 7th
+#### Redesign Released: _TBA_
 
 Current website is [here](http://www.bomantechnologies.com/)
 
 ## TO-DO
 
-1. Refactor nav
-1. Get pictures for the company
-1. Style custom and production pages
-1. Finish styles for navbar
+1. Get pictures
+1. Finish styles for navbar(logo too big on mobile?)
 1. Refactor homepage
 1. Choose fonts
-1. Choose color scheme
-
-* _Possible_ Blog
-
-* A place where heat sheets can be kept/ documents 
-  
-  * _Eventually_ a portfolio of documents for a specific user account
+1. Push online to finish email fuctionality
   
 ---
 
@@ -31,3 +23,13 @@ Current website is [here](http://www.bomantechnologies.com/)
 1. Email contact info funtionality
 1. Autoplay homepage header carousel
 1. Refactor Contact page
+1. Footer
+1. Responsive design
+
+---
+
+## Future Plans
+
+* Blog
+* Place where heat sheets can be kept/ documents 
+* Portfolio of documents for a specific user account
