@@ -2,6 +2,12 @@ nav {
   position: relative;
 }
 
+.navbar {
+  background: white !important;
+  border-bottom: 3px solid #435c97;
+  padding-bottom: 15px;
+}
+
 #bowman_logo img {
   max-height: 140px;
   max-width: 175px;
@@ -19,5 +25,10 @@ nav {
 
   li {
     margin-right: 5%;
+  }
+
+  .nav-link:hover {
+    color: #435c97 !important;
+    font-weight: 600 !important;
   }
 }
