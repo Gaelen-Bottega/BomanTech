@@ -6,27 +6,26 @@
   background-color: white;
   border-top: 3px solid #435c97;
   text-align: left;
-  font-size: 16px;
 
   ul {
     list-style-type: none;
   }
 
   h6 {
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 16px;
     color: black;
   }
 
-  li, li a {
-    font-weight: normal;
+  .footer-li, a {
+    font-size: 14px;
     color: #6c767d;
   }
 
-  li a:hover {
-  text-decoration: none;
-  color: #435c97;
-  cursor: pointer;
-
+  a:hover {
+    text-decoration: none;
+    color: #435c97;
+    cursor: pointer;
   }
 }
 
