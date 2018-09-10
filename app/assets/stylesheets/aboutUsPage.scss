@@ -1,5 +1,5 @@
 .jumbotron-au {
-  background-image: url(/assets/drill.jpg) !important;
+  background-image: url(/assets/people.jpg) !important;
   background-size: cover;
   color: white;
 }
@@ -42,6 +42,12 @@
   .card-body {
     margin-left: -20px !important;
   }
+}
+
+.cs-text {
+  color: black;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media only screen and (max-width: 700px) {
