@@ -4,7 +4,7 @@
 }
 
 .speed-home {
-  transition: transform .6s ease-in-out left !important;
+  transition: transform .8s ease-in-out left !important;
 }
 
 .carousel-img {
@@ -45,6 +45,7 @@
 .value-cards {
   height: 250px;
   width: 380px;
+  
   margin-top: 8%;
   margin-left: 30px;
   margin-right: 30px;
@@ -54,6 +55,49 @@
     padding-bottom: 15px;
     text-align: center;
   }
+}
+
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 380px;
+  height: 250px;
+}
+.slide1 {
+  background: url(/assets/machine_parts01.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade 8s infinite;
+  -webkit-animation:fade 8s infinite;
+
+} 
+.slide2 {
+  background: url(/assets/glasspart.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade2 8s infinite;
+  -webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+  background: url(/assets/4machinepts.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade3 8s infinite;
+  -webkit-animation:fade3 8s infinite;
+}
+@keyframes fade {
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2 {
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3 {
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
 }
 
 #mission-statement {
@@ -71,10 +115,6 @@
   background-color: #435c97;
 }
 
-.B2-snippets {
-  
-}
-
 @media only screen and (max-width: 700px) {
   .carousel-img {
     max-height: 220px;
@@ -85,10 +125,46 @@
   }
 }
 
+@media only screen and (max-width: 445px) {
+  .slide2,.slide3,.slide4,.slide5 {
+    display: none;
+  }
 
+  .slide1 {
+    animation: none; 
+  }
 
+  .slide1 {
+    background: url(/assets/machine_parts01mobile.jpg)no-repeat center;
+    width: 345px;
+  }
+}
 
+@media only screen and (width: 360px) {
+  .slide1 {
+    width: 305px;
+  }
+}
 
+@media only screen and (width: 320px) {
+  .slide1 {
+    width: 263px;
+  }
+
+  h1 {
+    font-size: 2.0rem;
+  }
+
+  #mission-statement {
+    margin-top: 16%;
+  }
+}
+
+@media only screen and (width: 375px) {
+  .slide1 {
+    width: 318px;
+  }
+}
 
 
 
