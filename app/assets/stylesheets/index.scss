@@ -76,6 +76,10 @@
 }
 
 @media only screen and (max-width: 700px) {
+  .carousel-img {
+    max-height: 220px;
+  }
+
   #carousel-text {
     margin-top: -15%;
   }
