@@ -65,21 +65,21 @@
 .slide1 {
   background: url(/assets/machine_parts01.jpg)no-repeat center;
   background-size: cover;
-  animation:fade 8s infinite;
-  -webkit-animation:fade 8s infinite;
+  animation:fade 16s infinite;
+  -webkit-animation:fade 16s infinite;
 
 } 
 .slide2 {
   background: url(/assets/glasspart.jpg)no-repeat center;
   background-size: cover;
-  animation:fade2 8s infinite;
-  -webkit-animation:fade2 8s infinite;
+  animation:fade2 16s infinite;
+  -webkit-animation:fade2 16s infinite;
 }
 .slide3 {
   background: url(/assets/4machinepts.jpg)no-repeat center;
   background-size: cover;
-  animation:fade3 8s infinite;
-  -webkit-animation:fade3 8s infinite;
+  animation:fade3 16s infinite;
+  -webkit-animation:fade3 16s infinite;
 }
 @keyframes fade {
   0%   {opacity:1}
