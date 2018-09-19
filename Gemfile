@@ -56,3 +56,20 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.0.0'
 gem 'mailgun-ruby', '~> 1.1', '>= 1.1.10'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+
+ruby "2.5.0"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
