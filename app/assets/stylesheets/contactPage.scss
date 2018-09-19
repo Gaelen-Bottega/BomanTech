@@ -63,3 +63,11 @@ iframe {
 	position: absolute;
 	right: 0;
 }
+
+@media only screen and (width: 320px) {
+  #characterCounter {
+    margin-left: 62%;
+    font-size: 12px;
+    text-align: center;
+  }
+} 
