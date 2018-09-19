@@ -18,6 +18,9 @@ nav {
 .navbar-toggler {
   position: absolute;
   right: 20px;
+  &:focus {
+    outline: none;
+  }
 }
 
 .navbar-nav {
