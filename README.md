@@ -3,8 +3,9 @@
 #### Redesign beta released: 09/19/18
 #### Finishing touches and first official release: _TBA_
 
-Current website is [here](http://www.bomantechnologies.com/)
-Live temporary home for new website is [here](http://www.bomantechnologies.herokuapp.com/)
+Current website is _[here](http://www.bomantechnologies.com/)_
+
+Live temporary home for new website is _[here](http://www.bomantechnologies.herokuapp.com/)_
 
 ### TO-DO
 
