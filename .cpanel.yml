@@ -1,6 +1,4 @@
 ---
 deployment:
   tasks:
-    - /bin/cp -R "${Gaelen-Bottega/BomanTech}" "/home/${bomantech}/public_html/"
-
-#what do I put in PWD again?
+    - /bin/cp -R "${Gaelen-Bottega/BomanTech}" "/home/${bomantech}/BomanTechnologies/"
