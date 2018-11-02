@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-
+  require 'mailgun'
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
@@ -13,6 +13,11 @@ class ContactMailer < ApplicationMailer
   	@phone = contact.phone
     @body = contact.body
 
-    mail to: "kaden@bottega.tech", from: contact.email
+    mg_client = Mailgun::Client.new ENV['mailgun_secret_api_key']
+    contact_params = {:from => contact.email,
+                      :to => ENV['email'],
+                      :subject => 'Contact Form',
+                      :text => contact.body}
+    mg_client.send_message ENV['mailgun_domain'], contact_params
   end
 end
