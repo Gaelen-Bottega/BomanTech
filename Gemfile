@@ -57,7 +57,7 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'mailgun-ruby', '~> 1.1', '>= 1.1.10'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 
-ruby "2.5.0"
+ruby "2.4.0"
 
 
 
