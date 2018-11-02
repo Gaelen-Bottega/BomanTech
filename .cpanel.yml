@@ -1,4 +1,0 @@
----
-deployment:
-  tasks:
-    - /bin/cp -R "${GaelenBottega/BomanTech}" "/home/${bomantech}/BomanTechnologies/"
