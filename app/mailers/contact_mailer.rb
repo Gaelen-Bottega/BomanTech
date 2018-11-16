@@ -17,7 +17,7 @@ class ContactMailer < ApplicationMailer
     contact_params = {:from => contact.email,
                       :to => ENV['email'],
                       :subject => 'Contact Form',
-                      :text => [contact.name, contact.body]}
+                      :text => contact.body}
     mg_client.send_message ENV['mailgun_domain'], contact_params
   end
 end
