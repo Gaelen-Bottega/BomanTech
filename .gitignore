@@ -20,5 +20,3 @@
 /config/secrets.yml
 # Ignore application configuration
 /config/application.yml
-
-/app/mailers/testmail.rb
