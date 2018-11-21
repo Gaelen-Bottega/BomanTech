@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-4">
         <ul>
-          <li><h6>Explore</h6></li>
+          <li><h6>Explore <i class="fas fa-globe-americas globe"></i></h6></li>
           <li class="footer-li"><%= link_to "Home", root_path %></li>
           <li class="footer-li"><%= link_to "About", about_us_path %></li>
           <li class="footer-li"><%= link_to "Contact", new_contact_path %></li>
@@ -12,7 +12,7 @@
 
       <div class="col-md-4">
         <ul>
-          <li><h6>Locally Made</h6></li>
+          <li><h6>Locally Made <i class="fas fa-location-arrow arrow"></i></h6></li>
           <li class="footer-li">Boman Precison Technologies</li>
           <li class="footer-li">67 Erna Avenue</li>
           <li class="footer-li">Milford, CT 06461</li>
@@ -21,11 +21,17 @@
       
       <div class="col-md-4">
         <ul>
-          <li><h6>Contact us</h6></li>
+          <li><h6>Contact us <i class="fas fa-hands-helping hands"></i></h6></li>
           <li class="footer-li">sales@bomantechnologies.com</li>
           <li class="footer-li">Phone: 203.623.9119</li>
           <li class="footer-li">Fax: 203.877.3721</li>
         </ul>
+          <script type="text/javascript">
+          $('.hands').click(function(){ 
+            alert("Call us: (203) 623-9119\r\nEmail our sales team: sales@bomantechnologies.com\r\nMessage us on Facebook!\r\nWe will respond as soon as we can to your inquiry.")
+            ;}
+          );
+          </script>
       </div>
     </div>
 

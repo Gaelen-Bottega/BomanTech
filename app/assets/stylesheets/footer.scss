@@ -27,6 +27,35 @@
     color: #435c97;
     cursor: pointer;
   }
+  
+  .globe {
+    transition: .6s;
+  }
+
+  .globe:hover, .arrow:hover, .hands:hover {
+    color: #435c97;
+    cursor: pointer;
+  }
+
+  .arrow {
+    font-size: .87em;
+    transition: .6s;
+  }
+
+  // .arrow:hover {
+  //   color: #435c97;
+  //   cursor: pointer;
+  // }
+  
+  .hands {
+    transition: .6s;
+  }
+
+  // .hands:hover {
+  //   color: #435c97;
+  //   cursor: pointer;
+  // }
+
 }
 
 .legal {

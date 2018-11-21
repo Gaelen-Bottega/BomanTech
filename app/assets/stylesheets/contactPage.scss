@@ -4,6 +4,15 @@
 	margin-left: 3%;
 }
 
+.handshake {
+  font-size: .7em;
+  transition: .45s;
+}
+
+.handshake:hover {
+  transform: translateY(2.5px); 
+}
+
 .contact-header {
 	h1 { color: #435c97; }
 	
@@ -33,10 +42,11 @@ iframe {
 
 .social-icons {
 	font-size: 30px;
+}
 
-	a { margin-right: 10px; }
-
-	.fa-instagram { color: #AE377B; }
+.social-icons a {
+  margin-right: 10px;
+  transition: .5s;
 }
 
 .control {
@@ -53,6 +63,7 @@ iframe {
 
 .contact-textarea {
 	margin-top: 3%;
+  resize: none;
 }
 
 .submit-btn {
