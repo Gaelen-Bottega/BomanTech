@@ -16,8 +16,8 @@ class ContactMailer < ApplicationMailer
     mg_client = Mailgun::Client.new ENV['mailgun_secret_api_key']
     contact_params = {:from => contact.email,
                       :to => ENV['email'],
-                      :subject => 'Contact Form',
-                      :text => contact.body}
+                      :subject => 'Contact Form Inquiry',
+                      :text => [contact.name, contact.job_position, contact.company_name, contact.phone, contact.body]}
     mg_client.send_message ENV['mailgun_domain'], contact_params
   end
 end
