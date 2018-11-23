@@ -4,7 +4,12 @@
 }
 
 .speed-home {
-  transition: transform .8s ease-in-out left !important;
+  // transition: transform .8s ease-in-out left !important;
+  transition: transform .6s ease-out, -out-webkit-transform .6s ease-out !important;
+  transition-property: transform, -webkit-transform !important;
+  transition-duration: .6s, .6s !important;
+  transition-timing-function: ease-out, ease-out !important;
+  transition-delay: 0s, 0s !important;
 }
 
 .carousel-img {
