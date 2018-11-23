@@ -30,8 +30,8 @@
         <h3>Give us a challenge!</h3>
         <hr>
         <%= form_for @contact, url: create_contact_url do |f| %>
-        <%= notice %>
-        <%= @contact.errors.full_messages.join(', ') %>
+        <p id="notice"><%= notice %></p>
+        <p id="errors"><%= @contact.errors.full_messages.join(", ") %></p>
         <div class="form-group">
           <label>Name</label>
           <%= f.text_field :name, class: 'control' %>

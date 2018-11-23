@@ -8,7 +8,7 @@ class ContactController < ApplicationController
 
 		if @contact.valid?
 			ContactMailer.contact_us(@contact).deliver_now
-			redirect_to new_contact_url, notice: "Proposal sent, thank you for your interest!"
+			redirect_to new_contact_url, notice: "Message sent, we will contact you soon. Thank you!"
 		else
 			render :new
 		end
