@@ -9,8 +9,10 @@ Live temporary home for new website is _[here](http://www.bomantechnologies.hero
 
 ### TO-DO
 
-1. __Finish email fuctionality__
 1. Add Adam
+1. Change all about us photos
+1. Change carosel pictures
+1. Check note on planned updates (dev)
   
 ---
 
@@ -30,6 +32,7 @@ Live temporary home for new website is _[here](http://www.bomantechnologies.hero
 1. Refactor homepage
 1. Choose fonts
 1. Fix linus "morale" blurb
+1. __Finish email fuctionality__
 
 ---
 
