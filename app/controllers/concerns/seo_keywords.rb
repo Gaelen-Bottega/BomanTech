@@ -6,7 +6,12 @@ module SeoKeywords
   end
 
   def seo_keywords
-    @seo_keywords = "Boman Technologies, 
+    @seo_keywords = "Boman Technologies,
+                    Boman,
+                    Bowman Technologies,
+                    Bowman, 
+                    Boman Technology,
+                    Contact Boman,
                     Engineering, 
                     Precision, 
                     Metal, 
@@ -17,9 +22,6 @@ module SeoKeywords
                     American Made, 
                     Engineers, 
                     Mandrel,
-                    Boman,
-                    Bowman Technologies,
-                    Boman Technology,
                     Machine Shop,
                     Milford,
                     Connecticut,

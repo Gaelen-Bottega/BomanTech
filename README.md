@@ -1,11 +1,8 @@
 # BomanTech
 
-#### Redesign beta released: 09/19/18
-#### Finishing touches and first official release: _TBA_
+#### First official release: 10/01/18
 
-Current website is _[here](http://www.bomantechnologies.com/)_
-
-Live temporary home for new website is _[here](http://www.bomantechnologies.herokuapp.com/)_
+Website is _[here](http://www.bomantechnologies.com/)_
 
 ### TO-DO
 
@@ -32,7 +29,7 @@ Live temporary home for new website is _[here](http://www.bomantechnologies.hero
 1. Refactor homepage
 1. Choose fonts
 1. Fix linus "morale" blurb
-1. __Finish email fuctionality__
+1. __Finished email fuctionality__
 
 ---
 
