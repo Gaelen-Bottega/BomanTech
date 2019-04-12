@@ -57,6 +57,26 @@ iframe {
   transition: .5s;
 }
 
+.envelope {
+  font-family: "Font Awesome 5 free";
+  content: " \f658";
+  font-weight: 900;
+  font-size: 27px;
+}
+
+.phonecontact {
+  color: #237bff;
+  font-size: 27px;
+}
+
+.tooltiptext {
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+
 .control {
 	width: 100%;
   padding: 4px 10px;

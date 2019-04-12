@@ -12,8 +12,11 @@
         <hr>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24009.193835996237!2d-73.09460691755655!3d41.218518335107234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e874af6c0f7d6f%3A0x628fe866f5989806!2s67+Erna+Ave%2C+Milford%2C+CT+06461!5e0!3m2!1sen!2sus!4v1533431084498" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="contact-info">
-          <h6>Phone:</h6>
-          <%= number_to_phone "2036239119" %>
+          <h6>Contact Us:</h6>
+          <div class="social-icons display-inline-block">
+            <a href="mailto:sales@bomantechnologies.com?subject=Reaching out from the website" target="_blank" "email me"><i class="fas fa-envelope-open-text envelope"></i></a>
+            <i class="fas fa-phone phonecontact" data-toggle="tooltip" data-placement="right" title="203-623-9119"></i>
+          </div>
           <hr>
 
           <h6>Social:</h6>
@@ -92,6 +95,13 @@
 </script>
 
 <script type="text/javascript" src="https://embed.modernapp.co/chat?code=9dae6c8c94e76fbf61ca0571e6d49fed"></script>
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+</script>
+
 
 
 
