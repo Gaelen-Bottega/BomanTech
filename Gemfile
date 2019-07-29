@@ -53,9 +53,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'bootstrap', '~> 4.0.0'
+gem "bootstrap", ">= 4.3.1"
 gem 'mailgun-ruby', '~> 1.1', '>= 1.1.10'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem "actionview", ">= 5.1.6.2"
+gem "nokogiri", ">= 1.8.5"
 
 ruby "2.5.0"
 
