@@ -37,37 +37,37 @@
         <p id="errors"><%= @contact.errors.full_messages.join(", ") %></p>
         <div class="form-group">
           <label>Name</label>
-          <%= f.text_field :name, class: 'control' %>
+          <%= f.text_field :name, class: 'control', maxlength: 30 %>
         </div>
 
         <div class="form-row">
           <div class="form-group col-md-6">
             <label>Email</label>
-            <%= f.text_field :email, class: 'control' %>
+            <%= f.text_field :email, class: 'control', maxlength: 30 %>
           </div>
           <div class="form-group col-md-6">
             <label>Phone</label>
-            <%= f.text_field :phone, class: 'control' %>
+            <%= f.text_field :phone, class: 'control', maxlength: 20 %>
           </div>
         </div>
 
         <div class="form-group">
           <label>Job Position</label>
-          <%= f.text_field :job_position, class: 'control' %>
+          <%= f.text_field :job_position, class: 'control', maxlength: 30 %>
         </div>
      
         <div class="form-group">
           <label>Company Name</label>
-          <%= f.text_field :company_name, class: 'control' %>
+          <%= f.text_field :company_name, class: 'control', maxlength: 30 %>
         </div>
       
         <div class="form-group">
-           <%= f.text_area :body, placeholder: 'Describe your challenge!', rows: '10', maxlength: 450, class: 'control contact-textarea', id: 'contactBodyId' %>
+           <%= f.text_area :body, placeholder: 'Describe your challenge!', rows: '10', maxlength: 1500, class: 'control contact-textarea', id: 'contactBodyId' %>
         </div>
 
         <div class="submit-btn display-inline-block">
           <span><%= f.submit 'Send', class: 'btn btn-primary' %></span>
-          <span id="characterCounter" class="text-muted"><span id="charsRemaining">450</span> Characters remaining</span>
+          <span id="characterCounter" class="text-muted"><span id="charsRemaining">1500</span> Characters remaining</span>
         </div>
       </div>
     </div>
@@ -84,7 +84,7 @@
     function countCharacters(e) {
       var textEntered, countRemaining, counter;
       textEntered = document.getElementById('contactBodyId').value;
-      counter = (450 - (textEntered.length));
+      counter = (1500 - (textEntered.length));
       countRemaining = document.getElementById('charsRemaining');
       countRemaining.textContent = counter;
     }
