@@ -10,7 +10,7 @@ class PagesController < ApplicationController
 
   end
 
-  def ProductionServices
-
+  def PrivacyPolicy
+    @page_title = "Boman | Privacy Policy"
   end
 end
