@@ -6,8 +6,8 @@ Website is _[here](http://www.bomantechnologies.com/)_
 
 ### TO-DO
 
-1. Add Adam
-1. Change all about us photos
+1. Add user accounts
+1. Change about us photos
 1. Change carosel pictures
 1. Check note on planned updates (dev)
   
@@ -30,6 +30,8 @@ Website is _[here](http://www.bomantechnologies.com/)_
 1. Choose fonts
 1. Fix linus "morale" blurb
 1. __Finished email fuctionality__
+1. Add employee
+1. Added Privacy Policy
 
 ---
 
