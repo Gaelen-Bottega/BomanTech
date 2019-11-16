@@ -1,15 +1,19 @@
 .carousel-inner {
-  max-height: 600px;
+  max-height: 600px !important;
   margin-bottom: 30px;
 }
 
-.speed-home {
-  // transition: transform .8s ease-in-out left !important;
-  transition: transform .6s ease-out, -out-webkit-transform .6s ease-out !important;
-  transition-property: transform, -webkit-transform !important;
-  transition-duration: .6s, .6s !important;
-  transition-timing-function: ease-out, ease-out !important;
-  transition-delay: 0s, 0s !important;
+// .speed-home-slide {
+//   // transition: transform .8s ease-in-out left !important;
+//   transition: transform .6s ease-out, -out-webkit-transform .6s ease-out !important;
+//   transition-property: transform, -webkit-transform !important;
+//   transition-duration: .6s, .6s !important;
+//   transition-timing-function: ease-out, ease-out !important;
+//   transition-delay: 0s, 0s !important;
+// }
+
+.speed-home-fade {
+  transition: transform 3s ease, opacity 1.5s ease-in-out !important;
 }
 
 .carousel-img {
@@ -28,6 +32,7 @@
   background-color: white;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
+  z-index: 500;
 
   h1 {
     padding-bottom: 20px;
