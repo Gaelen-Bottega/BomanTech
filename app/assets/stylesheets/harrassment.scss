@@ -1,0 +1,28 @@
+#har-Wrapper {
+  margin-top: 6%;
+  margin-bottom: 8%;
+}
+
+.har-title {
+  font-family: 'Tenor Sans', sans-serif;
+  margin-bottom: 5px;
+  font-size: 2.5em;
+  color: #435c97;
+}
+
+.har-h3 {
+  color: #435c97;
+}
+
+#har-bullet {
+  list-style: none;
+}
+
+#har-bullet #har-list::before {
+  content: "\2022";
+  color: #435c97;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}

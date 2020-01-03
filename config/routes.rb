@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # get 'custom_services', to: 'pages#CustomServices'
 
   get 'privacy_policy', to: 'pages#PrivacyPolicy'
+  get 'harrassment_policy', to:'pages#HarrassmentPolicy'
 
   root to: 'pages#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
