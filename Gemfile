@@ -58,7 +58,7 @@ gem 'mailgun-ruby', '~> 1.1', '>= 1.1.10'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem "actionview", ">= 5.1.6.2"
 gem "nokogiri", ">= 1.10.4"
-gem 'jquery_mask_rails', '~> 0.1.0'
+gem 'jquery_mask_rails', '~> 0.1.0"
 
 ruby "2.5.0"
 
