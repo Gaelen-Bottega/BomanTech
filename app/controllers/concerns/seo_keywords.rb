@@ -28,6 +28,7 @@ module SeoKeywords
                     Miyano,
                     Miyano Engineering,
                     Drilling,
-                    Drilling Parts"
+                    Drilling Parts,
+                    Quality"
   end
 end
