@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'privacy_policy', to: 'pages#PrivacyPolicy'
   get 'harrassment_policy', to:'pages#HarrassmentPolicy'
 
+  get 'cnc_machining', to: 'pages#CncMachining'
+
   root to: 'pages#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

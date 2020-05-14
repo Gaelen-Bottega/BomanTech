@@ -13,4 +13,8 @@ class PagesController < ApplicationController
   def PrivacyPolicy
     @page_title = "Boman | Privacy Policy"
   end
+
+  def CncMachining
+    @page_title = "Boman | CNC Machining"
+  end
 end
