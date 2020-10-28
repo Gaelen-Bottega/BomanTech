@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'cnc_machining', to: 'pages#CncMachining'
 
+  get 'production_equipment', to: 'pages#ProductionEquipment'
+
   root to: 'pages#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

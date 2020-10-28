@@ -25,13 +25,10 @@ nav {
 
 .navbar-nav {
   margin-left: 3%;
+  white-space: nowrap;
 
   li {
     margin-right: 5%;
-  }
-
-  .nav-link-stretched {
-    width: 142px;
   }
 
   .nav-link:hover {
