@@ -17,4 +17,8 @@ class PagesController < ApplicationController
   def CncMachining
     @page_title = "Boman | CNC Machining"
   end
+
+  def ProductionEquipment
+    @page_title = "Boman | Production Equipment"
+  end
 end
