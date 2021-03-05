@@ -66,6 +66,9 @@
            <%= f.text_area :body, placeholder: 'Describe your challenge!', rows: '10', maxlength: 1500, class: 'control contact-textarea', id: 'contactBodyId' %>
         </div>
 
+        <div class="g-recaptcha recaptcha" data-sitekey="6LfrId8ZAAAAADfkdpDohP622YLAJTvRSvDc3uuj"></div>
+        <br/>
+
         <div class="submit-btn display-inline-block">
           <span><%= f.submit 'Send', class: 'btn btn-primary' %></span>
           <span id="characterCounter" class="text-muted"><span id="charsRemaining">1500</span> Characters remaining</span>
