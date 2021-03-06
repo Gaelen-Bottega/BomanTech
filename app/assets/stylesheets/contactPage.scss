@@ -76,7 +76,6 @@ iframe {
   left: 105%;
 }
 
-
 .control {
 	width: 100%;
   padding: 4px 10px;
@@ -94,15 +93,17 @@ iframe {
   resize: none;
 }
 
-.recaptcha {
+#recaptcha {
   //padding: 5px;
 }
 
 .submit-btn {
+  padding-top: 15px;
 	position: relative;
 }
 
 #characterCounter {
+  padding-top: 10px;
 	position: absolute;
 	right: 0;
 }

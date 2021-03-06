@@ -7,10 +7,12 @@ class ContactController < ApplicationController
 	def create
 		@contact = Contact.new contact_params
 
-		if @contact.valid?
+		if @contact.valid? && verify_recaptcha
 			ContactMailer.contact_us(@contact).deliver_now
 			redirect_to new_contact_url, notice: "Message sent, we will contact you soon. Thank you!"
 		else
+			flash.delete(:recaptcha_error)
+			flash[:error] = "Please check the recaptcha"
 			render :new
 		end
 	end
