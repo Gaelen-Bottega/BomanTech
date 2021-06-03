@@ -112,6 +112,15 @@ iframe {
 	right: 0;
 }
 
+@media (max-width: 991px) {
+  #characterCounter {
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    padding-left: 140px;
+  }
+} 
+
 @media only screen and (width: 320px) {
   #characterCounter {
     margin-left: 62%;
