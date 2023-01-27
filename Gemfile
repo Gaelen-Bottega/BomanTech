@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 7.0', '>= 7.0.4.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
@@ -61,7 +61,7 @@ gem "nokogiri", ">= 1.10.4"
 gem 'jquery_mask_rails', '~> 0.1.0'
 gem "recaptcha"
 
-ruby "2.5.0"
+ruby "3.0.0"
 
 
 
