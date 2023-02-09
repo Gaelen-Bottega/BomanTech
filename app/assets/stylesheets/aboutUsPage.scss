@@ -1,7 +1,8 @@
 .jumbotron-au {
-  background-image: image-url('people.jpg') !important;
+  background-image: image-url('peopleBlurred.jpg') !important;
   background-size: cover;
   color: white;
+  padding: 30px;
 }
 
 .aboutUs-text {
@@ -52,7 +53,7 @@
 
 @media only screen and (max-width: 700px) {
   .aboutUs-container {
-    margin: 0% 8%;
+    margin: 8%;
   }
 
   .aboutUs-text {
